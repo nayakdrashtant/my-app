@@ -29,7 +29,18 @@
         }
     }
 }
-
+#accordion{
+  margin-top: 30px;
+}
+#accordion .card{
+  background-color: #004737;
+  margin-bottom: 20px;
+  color: #c8d926;
+}
+#accordion .card-header button{
+  color: #c8d926;
+  font-weight: bold;
+}
 .description-area{
     .description-section{
         background-color: $dark-green;
