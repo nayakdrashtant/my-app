@@ -138,5 +138,8 @@
       }
     }
   },
-  "defaultProject": "aquaverty"
+  "defaultProject": "aquaverty",
+  "cli": {
+    "analytics": "21c68ec7-2953-4573-95e8-359398102595"
+  }
 }
