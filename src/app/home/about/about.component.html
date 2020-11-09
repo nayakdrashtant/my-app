@@ -1,0 +1,44 @@
+<div class="about-area">
+    <div class="tabs-area row justify-content-between no-margin">
+        <div class="tabs-section" (click)="currentPage = 0" [ngClass]="{'selected': currentPage == 0}">
+            <div class="tab-img" (mouseenter)="showimg1 = true" (mouseleave)="showimg1 = false">
+                <img src="../../../assets/drawables/about/icon1-color2.png" *ngIf="showimg1 == false && currentPage != 0">
+                <img src="../../../assets/drawables/about/icon1-color1.png" *ngIf="showimg1 == true || currentPage == 0">
+            </div>
+            <div class="tab-title">CONSISTENT</div>
+        </div>
+        <div class="tabs-section" (click)="currentPage = 1" [ngClass]="{'selected': currentPage == 1}">
+            <div class="tab-img" (mouseenter)="showimg2 = true" (mouseleave)="showimg2 = false">
+                <img src="../../../assets/drawables/about/icon2-color2.png" *ngIf="showimg2 == false && currentPage != 1">
+                <img src="../../../assets/drawables/about/icon2-color1.png" *ngIf="showimg2 == true || currentPage == 1">
+            </div>
+            <div class="tab-title">NUTRITIOUS</div>
+        </div>
+        <div class="tabs-section">
+            <div class="tab-img" (mouseenter)="showimg3 = true" (mouseleave)="showimg3 = false"
+            (click)="currentPage = 2" [ngClass]="{'selected': currentPage == 2}">
+                <img src="../../../assets/drawables/about/icon3-color2.png" *ngIf="showimg3 == false && currentPage != 2">
+                <img src="../../../assets/drawables/about/icon3-color1.png" *ngIf="showimg3 == true || currentPage == 2">
+            </div>
+            <div class="tab-title">FLAVOR-FILLED</div>
+        </div>
+    </div>
+    <div class="description-area">
+        <div class="description-section" (mouseenter)="showtext = true" (mouseleave)="showtext = false">
+            <div class="description-title" *ngIf="showtext == false">
+                Presticides Free
+            </div>
+            <div class="description-text" *ngIf="showtext == true">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at aliquet odio. Ut odio lacus, ornare nec porta et, blandit sed libero. Etiam ullamcorper convallis ultrices. Maecenas urna lacus, semper eu pellentesque non, tincidunt sit amet mauris. Nullam sit amet sagittis erat. Cras venenatis ornare auctor. Integer eu dignissim lorem. In dui nisi, placerat a orci quis, malesuada venenatis ligula. Mauris lacinia sodales neque nec pharetra. 
+            </div>
+        </div>
+        <div class="description-section" (mouseenter)="showtext = true" (mouseleave)="showtext = false">
+            <div class="description-title" *ngIf="showtext == false">
+                Presticides Free
+            </div>
+            <div class="description-text" *ngIf="showtext == true">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at aliquet odio. Ut odio lacus, ornare nec porta et, blandit sed libero. Etiam ullamcorper convallis ultrices. Maecenas urna lacus, semper eu pellentesque non, tincidunt sit amet mauris. Nullam sit amet sagittis erat. Cras venenatis ornare auctor. Integer eu dignissim lorem. In dui nisi, placerat a orci quis, malesuada venenatis ligula. Mauris lacinia sodales neque nec pharetra. 
+            </div>
+        </div>
+    </div>
+</div>

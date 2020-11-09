@@ -1,0 +1,50 @@
+<div style="position: relative;">
+    <div class="top-shadow"></div>
+    <owl-carousel-o [options]="customOptions" class="top-carousel">
+
+        <ng-template carouselSlide>
+            <div class="top-car-container" [ngStyle]="{'background-image': 'url(../../../assets/drawables/Image1.jpg)'}">
+                <div class="top-car-desc">
+                    <div class="desc1">
+                        the future of farming is growing
+                    </div>
+                    <div class="desc2">
+                        in montreal
+                    </div>
+                </div>
+                <div class="top-car-clickable">
+                    <div class="top-car-section-name">about us</div>
+                    <img class="top-car-arrow-dwn" src="../../../assets/drawables/arrow-down.png">
+                </div>
+            </div>            
+            <!-- <img class="top-car-img" src="../../../assets/drawables/Image1.jpg"> -->
+        </ng-template>
+        <ng-template carouselSlide>
+            <div class="top-car-container" [ngStyle]="{'background-image': 'url(../../../assets/drawables/Image2.jpg)'}">
+                <div class="top-car-desc">
+                    <div class="desc1">
+                        the future of farming is growing
+                    </div>
+                    <div class="desc2">
+                        in montreal
+                    </div>
+                </div>
+                <div class="top-car-clickable">
+                    <div class="top-car-section-name">slide 2</div>
+                    <img class="top-car-arrow-dwn" src="../../../assets/drawables/arrow-down.png">
+                </div>
+            </div>            
+            <!-- <img class="top-car-img" src="../../../assets/drawables/Image2.jpg"> -->
+        </ng-template>
+        <!-- <ng-template carouselSlide>
+            <img class="top-car-img" src="../../../assets/drawables/Image3.jpg">
+        </ng-template>
+        <ng-template carouselSlide>
+            <img class="top-car-img" src="../../../assets/drawables/Image4.jpg">
+        </ng-template>
+        <ng-template carouselSlide>
+            <img class="top-car-img" src="../../../assets/drawables/Image5.jpg">
+        </ng-template> -->
+
+    </owl-carousel-o>
+</div>

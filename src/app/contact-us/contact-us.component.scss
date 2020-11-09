@@ -1,0 +1,121 @@
+.top-menu{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+}
+.footer-text-section{
+  background-color: #05392D;
+  color: #ffffff;
+  line-height: 1.0em;
+}
+.mr-auto, .mx-auto{
+  margin-left: auto!important;
+}
+.bg-light{
+  background-color: #ffffff!important;
+}
+.bg-forest-green{
+  background-color: #05392D;
+}
+.footer-text-section p{
+  line-height: 25px;
+  width: 100%;
+  display: inline-block;
+  margin: 0;
+  font-style: normal;
+  padding: 0.455555em;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+.footer_div{
+  background-color: #1e6e5e;
+  padding: 50px 0 20px 0;
+}
+.footer_div p{
+  padding: 10px 60px 10px 60px;
+  text-align: left;
+  color: #ffff;
+}
+
+.header_separator{
+  background-image: url(../../assets/header_seperator.png);
+  padding-bottom: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+.font-white{
+  color: #ffffff;
+}
+.contact_us_info_section{
+  padding: 50px 0 100px 0;
+}
+.contact_us_info_section h4{
+  color: #05392D;
+  font-size: 1.8em;
+  padding: 30px 0 20px 0;
+  font-weight: bold;
+}
+.contact_us_info_section p{
+  padding: 10px 0 20px 0;
+  text-align: left;
+  font-size: 1.0em;
+}
+.contact_us_info_section form button{
+  padding: 5px 50px 5px 50px;
+  border-radius: 0 !important;
+  margin: 0 auto;
+  display: block;
+}
+.padding-0{
+  padding: 0;
+}
+.margin-0{
+  margin: 0;
+}
+.section_container{
+  width: 100%;
+  display: block;
+  position: relative;
+}
+.padding-top-bottom-50px{
+  padding: 50px 0 50px 0;
+}
+#map {
+  min-height: 350px;
+}
+#map .gmnoprint{
+  display: none;
+}
+.grass_bg{
+  //background-image: url(../../assets);
+  position: relative;
+}
+.grass_bg .text-section p{
+  padding: 5px 0 5px 0;
+}
+.grass_bg .text-section{
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  font-size: 1.0em;
+  color: #ffffff;
+  padding-left: 30px;
+  text-align: left;
+}
+.padding-bottom-50px{
+  padding-bottom: 50px;
+}
+#accordion .card{
+  border: 1px solid black;
+  margin-bottom: 30px;
+}
+#accordion .card-header{
+  background: transparent;
+}
+#accordion .btn-link{
+  color: black;
+  font-weight: 500;
+}

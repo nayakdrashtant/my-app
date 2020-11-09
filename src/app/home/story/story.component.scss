@@ -1,0 +1,106 @@
+@import "../../variables.scss";
+.story-area{
+    height: 100vh;
+    position: relative;
+    padding: 64px;
+    
+    background-image: url('../../../assets/drawables/bg-plant1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.story-img-area{
+    padding: 0 32px;
+    margin: 0 auto;
+    .story-img{
+        height: 100%;
+        background-image: url('../../../assets/drawables/image5-crop.jpg');
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+    .mob-img{
+        display: none;
+    }
+}
+
+.story-zone{
+    padding: 0 48px;
+    .story-title{        
+        padding: 16px 0;
+        font-size: 20px;
+        font-family: 'Montserrat Bold Italic', sans-serif !important;
+        color: #000;
+        label{
+            img{
+                width: 32px;
+            }
+        }
+    }
+    .story-desc{
+        max-width: 400px;
+        padding: 16px 0;
+        font-size: 16px;
+        font-family: 'Montserrat Regular', sans-serif !important;
+        label{
+            img{
+                width: 24px
+            }
+        }
+    }
+    .aquaverty-btn{
+        position: absolute;
+        bottom: 24px;
+        font-size: 16px;
+        color: $dark-green;
+        font-family: 'Montserrat Regular', sans-serif !important;
+        font-weight: bold;
+        cursor: pointer;
+        &:hover{
+            color: $yellow-green;
+        }
+    }
+}
+
+@media (max-width: $max-tablet-width){
+    .story-area{
+        height: 840px;
+        padding: 64px 32px;
+        .story-img{
+            height: 674px;
+        }
+    }
+    .story-zone{
+        padding: 0 16px;
+        .aquaverty-btn{
+            bottom: 62px;
+        }
+    }
+}
+
+@media (max-width: $max-mobile-width){
+    .story-area{
+        padding: 16px 0px 0px;
+        background: none;
+        height: auto;
+    }
+    .story-img{display: none;}    
+    .story-img-area{
+        padding: 0 16px;
+        .mob-img{
+            display: block;
+            width: 100%;
+        }
+    }
+    .story-zone{
+        background-image: url('../../../assets/drawables/bg-plant1.jpg');
+        background-position: -264px;
+        background-repeat: no-repeat;
+        background-size: 750% 180%;
+        .aquaverty-btn{
+            position: relative;
+            margin-top: 16px;
+            margin-bottom: 72px;
+        }
+    }
+}
