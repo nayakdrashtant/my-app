@@ -1,0 +1,131 @@
+@import "../../variables.scss";
+.story-area{
+    height: 100vh;
+    position: relative;
+    padding: 64px;
+    background-image: url('../../../assets/drawables/bg--plants2.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.story-img-area{
+    padding: 0 32px;
+    margin: 0 auto;
+    .story-img{
+        height: 100%;
+        background-image: url('../../../assets/drawables/image5-crop.jpg');
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+    .mob-img{
+        display: none;
+    }
+}
+
+.story-zone{
+    padding: 0 48px;
+}
+    .story-title{        
+        padding: 16px 0;
+        font-size: 20px;
+        font-family: 'Montserrat Bold Italic', sans-serif !important;
+        color: #000;
+        &.mobile-view{
+            display: none;
+        }
+        label{
+            img{
+                width: 32px;
+            }
+        }
+    }
+    .story-desc{
+        max-width: 400px;
+        padding: 16px 0;
+        font-size: 16px;
+        font-family: 'Montserrat Regular', sans-serif !important;
+        label{
+            img{
+                width: 24px
+            }
+        }
+    }
+    .aquaverty-btn{
+        position: absolute;
+        bottom: 24px;
+        font-size: 18px;
+        color: $dark-green;
+        font-family: 'Montserrat Regular', sans-serif !important;
+        font-weight: bold;
+        cursor: pointer;
+        &:hover{
+            color: $yellow-green;
+        }
+        .btn-text{
+            margin-right: 8px;
+        }
+        .btn-icon{
+            padding-top: 4px;
+            i{
+                font-size: 18px;
+            }
+        }
+    }
+
+@media (max-width: $max-tablet-width){
+    .story-area{
+        background-image: url('../../../assets/drawables/Ipad-bg--plants2.gif');
+        height: 800px;
+        padding: 64px 32px;
+        .story-img{
+            height: 674px;
+        }
+    }
+    .story-zone{
+        padding: 0 16px;
+        .aquaverty-btn{
+            bottom: 0;
+        }
+    }
+}
+
+@media (max-width: $max-mobile-width){
+    .story-area{
+        padding: 16px 0px 0px;
+        background: none;
+        height: auto;
+    }
+    .story-img{display: none;}    
+    .story-img-area{
+        padding: 0 16px;
+        margin-bottom: 32px;
+        .mob-img{
+            display: block;
+            width: 100%;
+        }
+    }
+    .story-title{
+        &.mobile-view{
+            display: block;
+            padding: 16px;
+        }
+        &.web-view{
+            display: none;
+        }
+    }
+    .story-zone{
+        padding: 0 24px;
+        background-image: url('../../../assets/drawables/plants2-mobile.gif');
+        background-position: bottom;
+        background-repeat: no-repeat;
+        .story-desc{
+            padding: 8px 0;
+        }
+        .aquaverty-btn{
+            position: relative;
+            // margin-top: 72px !important;
+            margin-bottom: 72px !important;
+        }
+    }
+}

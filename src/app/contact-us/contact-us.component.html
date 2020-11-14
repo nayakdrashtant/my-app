@@ -1,0 +1,113 @@
+<app-top-menu class="top-menu" [lighbg]="true"></app-top-menu> 
+<!-- <div class="contact-us-header"></div> -->
+<div class="contact-us max-width">
+    <div class="contact-us-main-section row">
+        <div class="col-sm-6 no-padding">
+            <div class="page-title">Contact Us</div>
+            <div class="page-description">
+                <div class="contact-question row no-margin">
+                    <div class="row no-margin"><img src="../../assets/drawables/Leaf-2.png" alt="">Are you a customer who needs help?</div>
+                    <div class="row no-margin">That's what the&nbsp;
+                        <div class="row no-margin">
+                            <div class="aqua">Aqua</div>
+                            <div class="verty">Verti</div>
+                        </div>&nbsp;Team is for!&nbsp;<img src="../../assets/drawables/Leaf-2.png" alt="">
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 no-padding message-section">
+            <div class="form-group row">
+                <label>Name</label>
+                <div class="validation-dot">*</div>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group row">
+                <label>Email</label>
+                <div class="validation-dot">*</div>
+                <input type="email" class="form-control">
+            </div>
+            <div class="form-group row">
+                <label>Name</label>
+                <div class="validation-dot">*</div>
+                <textarea class="form-control"></textarea>
+            </div>
+            <div class="row no-margin d-flex justify-content-end">
+                <div class="action-btn">Send</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row map-section">
+        <div class="col-sm-6 map-container">
+            <div id="map"></div>
+        </div>
+        <div class="col-sm-6 contact-data-container">
+            <div class="contact-data-sub-container">
+                <div class="row no-margin contact-data-row">
+                    <div class="data-icon"><i class="material-icons">pin_drop</i></div>
+                    <div class="data-text">415 Boulevard Lebeau, Saint-Laurent, QC H4N 1S2</div>
+                </div>
+                <div class="row no-margin contact-data-row">
+                    <div class="data-icon"><i class="material-icons">phone</i></div>
+                    <div class="data-text">(514) 332-5553</div>
+                </div>
+                <div class="row no-margin contact-data-row">
+                    <div class="data-icon"><i class="material-icons">schedule</i></div>
+                    <div class="data-text">Monday-Friday 8:30am-5:30pm</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 contact-data-container-mobile">
+            <div class="row no-margin contact-data-row">
+                <div class="data-icon"><i class="material-icons">pin_drop</i></div>
+                <div class="data-text">415 Boulevard Lebeau, Saint-Laurent, QC H4N 1S2</div>
+            </div>
+            <div class="row no-margin contact-data-row">
+                <div class="data-icon"><i class="material-icons">phone</i></div>
+                <div class="data-text">(514) 332-5553</div>
+            </div>
+            <div class="row no-margin contact-data-row">
+                <div class="data-icon"><i class="material-icons">schedule</i></div>
+                <div class="data-text">Monday-Friday 8:30am-5:30pm</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="accordion-box">
+        <div class="page-title">FAQs</div>
+        
+        <div class="expand-collapse">
+            <div class="row no-margin justify-content-between exp-col-header" [ngClass]="{'show-description': showrow1 == true}" (click)="showrow1 =! showrow1">
+                <div class="exp-col-text">question 1</div>
+                <div class="exp-col-icon" *ngIf="showrow1 == false"><i class="material-icons">expand_more</i></div>
+                <div class="exp-col-icon" *ngIf="showrow1 == true"><i class="material-icons">expand_less</i></div>
+            </div>
+            <div class="exp-col-desc" [ngClass]="{'show-description': showrow1 == true}">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+        </div>
+        <div class="expand-collapse">
+            <div class="row no-margin justify-content-between exp-col-header" [ngClass]="{'show-description': showrow2 == true}" (click)="showrow2 =! showrow2">
+                <div class="exp-col-text">question 2</div>
+                <div class="exp-col-icon" *ngIf="showrow2 == false"><i class="material-icons">expand_more</i></div>
+                <div class="exp-col-icon" *ngIf="showrow2 == true"><i class="material-icons">expand_less</i></div>
+            </div>
+            <div class="exp-col-desc" [ngClass]="{'show-description': showrow2 == true}">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+        </div>
+
+        <div class="expand-collapse">
+            <div class="row no-margin justify-content-between exp-col-header" [ngClass]="{'show-description': showrow3 == true}" (click)="showrow3 =! showrow3">
+                <div class="exp-col-text">question 3</div>
+                <div class="exp-col-icon" *ngIf="showrow3 == false"><i class="material-icons">expand_more</i></div>
+                <div class="exp-col-icon" *ngIf="showrow3 == true"><i class="material-icons">expand_less</i></div>
+            </div>
+            <div class="exp-col-desc" [ngClass]="{'show-description': showrow3 == true}">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

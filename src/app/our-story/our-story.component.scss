@@ -1,0 +1,18 @@
+@import "../variables.scss";
+.top-menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+}
+.story{
+    padding: 72px 16px;
+    .page-title{
+        font-size: 38px;
+        text-transform: uppercase;
+        font-family: 'Montserrat Bold', sans-serif !important;
+        color: $dark-green;
+        margin-bottom: 32px;
+    }
+}

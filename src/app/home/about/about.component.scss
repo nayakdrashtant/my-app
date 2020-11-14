@@ -1,0 +1,88 @@
+@import "../../variables.scss";
+.about-area{
+    height: 100vh;
+    position: relative;
+    padding: 0 90px;
+}
+
+.tabs-area{
+    padding: 32px 72px 0;
+    .tabs-section{
+        font-size: 20px;
+        font-family: 'Montserrat Bold Italic', sans-serif !important;
+        cursor: pointer;
+        color: $light-green;
+        .tab-img{
+            text-align: center;
+            img{
+                width: 120px;
+            }
+        }
+        .tab-title{
+            margin-top: 8px;
+        }
+        &:hover{
+            color: $dark-green;
+        }
+        &.selected{
+            color: $dark-green;
+        }
+    }
+}
+
+.description-area{
+    .description-section{
+        background-color: $dark-green;
+        width: 100%;
+        margin-top: 16px;
+        .description-title{
+            font-size: 18px;
+            font-family: 'Montserrat Bold Italic', sans-serif !important;
+            color: $yellow-green;
+            padding: 16px;
+            text-align: center;
+        }
+        .description-text{
+            font-size: 16px;
+            font-family: 'Montserrat Regular', sans-serif !important;
+            color: #fff;
+            padding: 64px 32px;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: $max-tablet-width){
+    .about-area{
+        padding: 0 48px;
+        height: auto;
+    }
+    .tabs-area{
+        padding: 32px 40px 0;
+        .tabs-section{
+            .tab-img{
+                img{
+                    width: 100px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $max-mobile-width){
+    .about-area{
+        height: auto;
+        padding: 32px 16px;
+    }
+    .tabs-area{
+        padding: 0;
+        .tabs-section{
+            font-size: 12px;
+            .tab-img{
+                img{
+                    width: 40px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,157 @@
+<app-top-menu class="top-menu" [lighbg]="true"></app-top-menu> 
+<div class="team max-width">
+    <div class="page-title">Meet Our Team</div>
+    <div class="team-quote">
+        <img src="../../assets/drawables/Leaf-2.png" alt=""> We’re a mission-driven team of creative builders, problem-solvers, and activators. Together, we’re reimagining farming from the ground up to eradicate trade-offs between quality and quantity, sustainability and scale, and healthy and delicious when it comes to the food we eat.<img src="../../assets/drawables/Leaf-2.png">
+    </div>
+    <div class="team-members-area row no-margin">
+        <div class="col-md-4 col-lg-3">
+            <div class="members-container" (click)="showDesc1 = !showDesc1">
+                <div class="member-image">
+                    <img src="../../assets/drawables/ourteam/IMG_0128.JPG" alt="">
+                </div>
+                <div class="member-name">
+                    Fares Aczam
+                </div>
+                <div class="member-title">
+                    Farm Associate
+                </div>
+                <div class="expended-area" *ngIf="showDesc1 == true">
+                    His favorite AquaVerti green is Parsley Curly because it adds sweet taste and a nice quick
+                    essential to every salad and many meals he enjoys cooking.
+                    Young and motivated farmer
+                    Amazing Team player
+                    Fastest harvester
+                    Refers to himself as a pretty nice guy
+                </div>
+            </div>            
+        </div>
+
+        <div class="col-md-4 col-lg-3">
+            <div class="members-container" (click)="showDesc2 = !showDesc2">
+                <div class="member-image">
+                    <img src="../../assets/drawables/ourteam/IMG_0130.JPG" alt="">
+                </div>
+                <div class="member-name">
+                    Sarah Flack
+                </div>
+                <div class="member-title">
+                    Farm Associate
+                </div>
+                <div class="expended-area" *ngIf="showDesc2 == true">
+                    Professional Dancer
+                    Passionate modern farmer
+                    Environment caretaker
+                    Vegan and loves to volunteer at farm sanctuaries during her free time
+                    Her favorite AquaVerti product is all of them combined together
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-lg-3">
+            <div class="members-container" (click)="showDesc3 = !showDesc3">
+                <div class="member-image">
+                    <img src="../../assets/drawables/ourteam/IMG_0131.JPG" alt="">
+                </div>
+                <div class="member-name">
+                    George Jbeil
+                </div>
+                <div class="member-title">
+                    Operation Manager
+                </div>
+                <div class="expended-area" *ngIf="showDesc3 == true">
+                    His favorite AquaVerti green is Dill because it represents a unique taste and elegant tall
+                    leaves. He is now addicted to it.
+                    Eats most of the harvest while doing quality tests
+                    Strong believer in Vertical Sustainable Farming
+                    He has been a Farmer since a young age working alongside his grandfather during
+                    summers                    
+                </div>
+            </div>            
+        </div>
+
+        <div class="col-md-4 col-lg-3">
+            <div class="members-container">
+                <div class="member-image" (click)="showDesc4 = !showDesc4">
+                    <img src="../../assets/drawables/ourteam/IMG_0132.JPG" alt="">
+                </div>
+                <div class="member-name">
+                    Georges Aczam
+                </div>
+                <div class="member-title">
+                    CEO-Cofounder
+                </div>
+                <div class="expended-area" *ngIf="showDesc4 == true">
+                    His favorite AquaVerti green is the Baby Romaine Lettuces because it reminds him of the
+                    importance of diversity, Boldness, and integrity.
+                    Left the Finance world to have a positive impact on the planet
+                    Loves working with motivate individual
+                    Strong believer in buying local products and increasing food security               
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sponsors">
+        <div class="page-title">Our Partners</div>
+        <div class="sponsor-carousel">
+            <owl-carousel-o [options]="customOptions2" #owlCar>
+                <ng-template carouselSlide>
+                    <div class="carousel-container">
+                            <div class="image-container">
+                                <img src="../../assets/drawables/sponsors/IGA Logo.png" alt="">
+                            </div>
+                    </div>             
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="carousel-container">
+                            <div class="image-container">
+                                <img src="../../assets/drawables/sponsors/Metro Logo.jpeg" alt="">
+                            </div>
+                    </div>             
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="carousel-container">
+                            <div class="image-container">
+                                <img src="../../assets/drawables/sponsors/Milano logo.jpg" alt="">
+                            </div>
+                    </div>             
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="carousel-container">
+                            <div class="image-container">
+                                <img src="../../assets/drawables/sponsors/Supermarché P.A logo.png" alt="">
+                            </div>
+                    </div>             
+                </ng-template>
+                
+            </owl-carousel-o>
+        
+            <div class="custom-carousel-btn custom-prev" (click)="owlCar.prev()">
+                <div class="carousel-img-container">
+                    <img src="../../../assets/drawables/Arrow-l.png" alt="">
+                </div>
+            </div>
+            <div class="custom-carousel-btn custom-next" (click)="owlCar.next()">
+                <div class="carousel-img-container">
+                    <img src="../../../assets/drawables/Arrow-r.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- <div class="row">
+            <div class="col-sm-3 sponsor">
+                <img src="../../assets/drawables/sponsors/IGA Logo.png" alt="">
+            </div>
+            <div class="col-sm-3 sponsor">
+                <img src="../../assets/drawables/sponsors/Metro Logo.jpeg" alt="">
+            </div>
+            <div class="col-sm-3 sponsor">
+                <img src="../../assets/drawables/sponsors/Milano logo.png" alt="">
+            </div>
+            <div class="col-sm-3 sponsor">
+                <img src="../../assets/drawables/sponsors/Supermarché P.A logo.png" alt="">
+            </div>
+        </div>         -->
+    </div>
+</div>
+
+<app-footer></app-footer>
